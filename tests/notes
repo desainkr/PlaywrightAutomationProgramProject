@@ -1,0 +1,45 @@
+POM- Page object Model
+design pattern
+
+benifts or why we use POM
+1.Reusability 
+2.Maintainability
+3.Readability
+4.Scalability
+5.Abstraction
+
+Test Script
+Login
+Add to cart
+Remove from cart
+Checkout
+
+Product Page
+Logout
+validate Filter
+About
+Add single product to the cart
+Add all the product to the cart
+Add few products to the cart
+
+cart Page
+continue shopping
+remove item
+validate item details in the cart page(for one item and more than one item)
+
+checkout info
+Cancel
+Enter the details
+continue
+validate the product details
+
+Checkout overview
+validate the product details
+Cancel
+continue
+
+
+Order Confirmation
+Validate the final message
+
+
