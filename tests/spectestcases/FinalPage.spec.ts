@@ -1,17 +1,17 @@
 import { test, expect } from "@playwright/test";
-import { ProductPage } from "./pages/ProductPage";
-import { BASE_URL, PASSWORD, USERNAME } from "./utils/envConfig";
-import { LoginPage } from "./pages/LoginPage";
-import { LoginLocators } from "./locators/LoginLocators";
-import { CartPage } from "./pages/CartPage";
-import { checkoutData } from "../test-data/checkoutData";
-import { CheckoutPage } from "./pages/CheckoutPage";
-import { CartPageLocators } from "./locators/CartPageLocators";
+import { ProductPage } from "../pages/ProductPage";
+import { BASE_URL, PASSWORD, USERNAME } from "../utils/envConfig";
+import { LoginPage } from "../pages/LoginPage";
+import { LoginLocators } from "../locators/LoginLocators";
+import { CartPage } from "../pages/CartPage";
+import { checkoutData } from "../../test-data/checkoutData";
+import { CheckoutPage } from "../pages/CheckoutPage";
+import { CartPageLocators } from "../locators/CartPageLocators";
 //import { CheckoutPageLocators } from "./locators/CheckoutPageLocators";
 import { Page } from "@playwright/test";
-import { CheckoutOverviewPage } from "./pages/CheckoutOverviewPage";
-import { productsToCart } from "../test-data/products";
-import { FinalPage } from "./pages/FinalPage";
+import { CheckoutOverviewPage } from "../pages/CheckoutOverviewPage";
+import { productsToCart } from "../../test-data/products";
+import { FinalPage } from "../pages/FinalPage";
 
 test.describe("Swag labs final page validation", () => {
     let loginPage: LoginPage;
@@ -39,8 +39,6 @@ test.describe("Swag labs final page validation", () => {
         await checkoutPage.clickonContinueBtn();
         await checkoutOverview.clickOnFinishBtn();
     })
-
-
     test('validate checkout overview page UI and url', async ({ page }) => {
 
         await expect(page).toHaveURL(/checkout-complete.html/);
@@ -49,24 +47,17 @@ test.describe("Swag labs final page validation", () => {
         await expect(elements.pageInfo).toBeVisible();
         await expect(elements.successMsg).toBeVisible();
 
-
     })
-
-
     test('validate success message', async ({ page }) => {
 
         const msg = await finalPage.getSuccessMsgText();
         expect(msg).toBe("Thank you for your order!");
 
     })
-
-
     test('validate Backhome Button', async ({ page }) => {
 
         await finalPage.clickOnBackHomeBtn();
         expect(page).toHaveURL(/inventory.html/);
-
-
     })
 
 

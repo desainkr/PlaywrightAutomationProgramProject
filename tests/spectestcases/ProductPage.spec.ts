@@ -1,9 +1,9 @@
 import { test, expect } from "@playwright/test";
-import { ProductPageLocators } from "./locators/ProductPageLocators";
-import { ProductPage } from "./pages/ProductPage";
-import { BASE_URL, PASSWORD, USERNAME } from "./utils/envConfig";
-import { LoginPage } from "./pages/LoginPage";
-import { LoginLocators } from "./locators/LoginLocators";
+import { ProductPageLocators } from "../locators/ProductPageLocators";
+import { ProductPage } from "../pages/ProductPage";
+import { BASE_URL, PASSWORD, USERNAME } from "../utils/envConfig";
+import { LoginPage } from "../pages/LoginPage";
+import { LoginLocators } from "../locators/LoginLocators";
 
 
 test.describe("Prodct page validation", () => {

@@ -1,11 +1,11 @@
 import { test, expect } from "@playwright/test";
-import { ProductPageLocators } from "./locators/ProductPageLocators";
-import { ProductPage } from "./pages/ProductPage";
-import { BASE_URL, PASSWORD, USERNAME } from "./utils/envConfig";
-import { LoginPage } from "./pages/LoginPage";
-import { LoginLocators } from "./locators/LoginLocators";
-import { CartPage } from "./pages/CartPage";
-import { productsToCart } from "../test-data/products";
+import { ProductPageLocators } from "../locators/ProductPageLocators";
+import { ProductPage } from "../pages/ProductPage";
+import { BASE_URL, PASSWORD, USERNAME } from "../utils/envConfig";
+import { LoginPage } from "../pages/LoginPage";
+import { LoginLocators } from "../locators/LoginLocators";
+import { CartPage } from "../pages/CartPage";
+import { productsToCart } from "../../test-data/products";
 
 test.describe("Prodct page validation", () => {
     let loginPage: LoginPage;

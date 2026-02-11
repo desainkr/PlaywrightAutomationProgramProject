@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from './pages/LoginPage';
-import { BASE_URL, USERNAME, PASSWORD } from './utils/envConfig.ts';
+import { LoginPage } from '../pages/LoginPage.ts';
+import { BASE_URL, USERNAME, PASSWORD } from '../utils/envConfig.ts';
 test('Login to saucedemo application with valid cdentials', async ({ page }) => {
     const loginpage = new LoginPage(page);
     await page.goto(BASE_URL);

@@ -1,16 +1,16 @@
 import { test, expect } from "@playwright/test";
-import { ProductPage } from "./pages/ProductPage";
-import { BASE_URL, PASSWORD, USERNAME } from "./utils/envConfig";
-import { LoginPage } from "./pages/LoginPage";
-import { LoginLocators } from "./locators/LoginLocators";
-import { CartPage } from "./pages/CartPage";
-import { checkoutData } from "../test-data/checkoutData";
-import { CheckoutPage } from "./pages/CheckoutPage";
-import { CartPageLocators } from "./locators/CartPageLocators";
+import { ProductPage } from "../pages/ProductPage";
+import { BASE_URL, PASSWORD, USERNAME } from "../utils/envConfig";
+import { LoginPage } from "../pages/LoginPage";
+import { LoginLocators } from "../locators/LoginLocators";
+import { CartPage } from "../pages/CartPage";
+import { checkoutData } from "../../test-data/checkoutData";
+import { CheckoutPage } from "../pages/CheckoutPage";
+import { CartPageLocators } from "../locators/CartPageLocators";
 //import { CheckoutPageLocators } from "./locators/CheckoutPageLocators";
 import { Page } from "@playwright/test";
-import { CheckoutOverviewPage } from "./pages/CheckoutOverviewPage";
-import { productsToCart } from "../test-data/products";
+import { CheckoutOverviewPage } from "../pages/CheckoutOverviewPage";
+import { productsToCart } from "../../test-data/products";
 
 
 test.describe("Swag labs checkout overview validation", () => {

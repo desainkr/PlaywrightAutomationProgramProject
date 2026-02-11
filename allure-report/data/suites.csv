@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","4862","validate error message when continue without entering data","chromium","Tue Feb 10 16:59:33 PST 2026","passed","Tue Feb 10 16:59:37 PST 2026","Swag labs checkout page validation","CheckoutPage.spec.ts","",""
